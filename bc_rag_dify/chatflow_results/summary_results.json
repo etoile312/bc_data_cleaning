@@ -1,0 +1,35 @@
+{
+  "total_files_processed": 18,
+  "average_scores": {
+    "context_relevance": 0.19896486649910608,
+    "faithfulness": 0.16583339706994593,
+    "answer_relevance": 0.23291328021635613,
+    "answer_correctness": 0.5593303955263562,
+    "context_recall": 0.0
+  },
+  "total_average": 0.23140838786235288,
+  "successful_files": [
+    "qa04_cmed.json",
+    "qa05_cmed.json",
+    "qa03_cmed.json",
+    "qa07_cmed.json",
+    "qa06_cmed.json",
+    "qa02_cmed.json",
+    "qa100_cmed.json",
+    "qa08_cmed.json",
+    "qa10_cmed.json",
+    "qa09_cmed.json",
+    "qa102_cmed.json",
+    "qa104_cmed.json",
+    "qa103_cmed.json",
+    "qa101_cmed.json",
+    "qa105_cmed.json",
+    "qa109_cmed.json",
+    "qa107_cmed.json",
+    "qa108_cmed.json"
+  ],
+  "failed_files": [
+    "qa01_cmed.json",
+    "qa106_cmed.json"
+  ]
+}

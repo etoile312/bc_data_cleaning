@@ -1,0 +1,22 @@
+{
+  "noise_types": {
+    "administrative": {"prob": 0.2, "length": [50, 100]},
+    "hospital_info": {"prob": 0.1, "length": [30, 80]},
+    "examination": {"prob": 0.1, "length": [50, 200]},
+    "electronic_trace": {"prob": 0.1, "length": [50, 100]},
+    "address": {"prob": 0.1, "length": [50, 100]},
+    "duplicate": {"prob": 0.1, "length": [50, 100]},
+    "covid_test": {"prob": 0.05, "length": [30, 80]},
+    "table_header": {"prob": 0.1, "length": [30, 80]},
+    "table_row_merge": {"prob": 0.1, "length": [50, 120]},
+    "detailed_lab_result": {"prob": 0.1, "length": [100, 300]},
+    "serial_merge": {"prob": 0.1, "length": [80, 200]},
+    "doctor_advice": {"prob": 0.1, "length": [30, 80]},
+    "remove_space": {"prob": 0.2},
+    "computer_menu": {"prob": 0.1, "length": [30, 80]}
+  },
+  "injection_stages": {
+    "content_level": {"prob": 0.7, "num_noise": [1, 3]},
+    "ocr_level": {"prob": 0.3, "char_error_rate": 0.02}
+  }
+} 

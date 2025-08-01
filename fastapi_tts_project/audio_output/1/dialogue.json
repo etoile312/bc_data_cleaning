@@ -1,0 +1,10 @@
+[
+  {
+    "role": "patient",
+    "text": "你好"
+  },
+  {
+    "role": "doctor",
+    "text": "你好，有什么问题？"
+  }
+]

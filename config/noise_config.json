@@ -1,0 +1,11 @@
+{
+  "noise_types": {
+    "administrative": {"prob": 0.2, "length": [50, 100]},
+    "computer_menu": {"prob": 0.1, "length": [30, 80]},
+    "remove_space": {"prob": 0.2},
+    "duplicate": {"prob": 0.1, "length": [50, 100]},
+    "examination": {"prob": 0.1, "length": [50, 200]},
+    "electronic_trace": {"prob": 0.1, "length": [50, 100]},
+    "address": {"prob": 0.1, "length": [50, 100]}
+  }
+} 

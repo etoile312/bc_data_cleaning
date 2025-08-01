@@ -1,0 +1,79 @@
+# 数据清洗项目配置文件
+
+# 模型配置
+model:
+  # 默认使用的模型类型
+  default_model: "local-model"
+  
+  # 模型配置选项
+  models:
+    gpt-4:
+      api_key: "${OPENAI_API_KEY}"
+      base_url: "https://api.openai.com/v1"
+      temperature: 0.1
+      max_tokens: 4000
+      
+    claude:
+      api_key: "${ANTHROPIC_API_KEY}"
+      base_url: "https://api.anthropic.com"
+      temperature: 0.1
+      max_tokens: 4000
+      
+    local-model:
+      api_url: "http://192.168.19.211:8000/v1/model/single_report"
+      temperature: 0.1
+      max_tokens: 4000
+      
+    qwen-model:
+      api_url: "http://qwen3.aistarfish.net/v1/model/single_report"
+      api_key: "haixin_csco1435tG8y98hTa717"
+      temperature: 0.1
+      max_tokens: 4000
+      
+    transformers-chinese-llama:
+      model_name: "THUDM/chatglm2-6b"
+      temperature: 0.1
+      max_tokens: 4000
+      
+    sentence-paraphrase:
+      model_name: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+      temperature: 0.1
+      max_tokens: 4000
+
+# 流程控制
+pipeline:
+  # 是否启用每个步骤
+  steps:
+    step1_noise_removal: true
+    step2_format_fix: true
+    step3_paragraph_classification: true
+    step4_terminology_standardization: true
+    step5_spelling_correction: true
+    step6_field_extraction: true
+    step7_field_validation: true
+  
+  # 批处理大小
+  batch_size: 10
+  
+  # 是否保存中间结果
+  save_intermediate: true
+  
+  # 输出格式
+  output_format: "json"
+
+# 数据配置
+data:
+  # 输入文件
+  input_file: "hx_data.xls"
+  
+  # 输出目录
+  output_dir: "data"
+  
+  # 临时文件目录
+  temp_dir: "temp"
+
+# 日志配置
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/cleaning.log" 

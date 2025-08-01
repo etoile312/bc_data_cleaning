@@ -1,0 +1,176 @@
+{
+  "基本信息": {
+    "templates": [
+      "{name}，{gender}，{birth}出生（现年{age}岁）。",
+      "患者姓名：{name}，性别：{gender}，出生日期：{birth}，年龄：{age}岁。"
+    ],
+    "names": ["李**", "王**", "张**", "刘**", "陈**", "杨**", "赵**", "黄**", "周**", "吴**"],
+    "genders": ["女"],
+    "birth_range": ["1960-01-01", "1980-12-31"]
+  },
+  "既往史": {
+    "templates": [
+      "既往史：{content}",
+      "既往疾病史：{content}",
+      "以往健康状况：{content}",
+      "既往健康情况：{content}"
+    ],
+    "contents": ["无殊", "无特殊", "无异常", "无重大疾病史", "健康，无慢性病史", "无慢性疾病", "无高血压、糖尿病等慢性病"]
+  },
+  "个人史": {
+    "templates": [
+      "个人史：{content}",
+      "个人健康史：{content}",
+      "个人既往情况：{content}",
+      "个人既往健康：{content}",
+      "个人生活习惯：{content}。",
+      "个人无不良嗜好，{content}。"
+    ],
+    "contents": ["无殊", "无特殊", "无异常", "无不良嗜好", "生活规律，健康状况良好", "无吸烟饮酒史"]
+  },
+  "婚育史": {
+    "templates": [
+      "{age}岁结婚，育有{children}，{health_status}。",
+      "婚育情况：{age}岁时结婚，{children}，{health_status}。",
+      "{age}岁结婚，{children}，目前{health_status}。",
+      "结婚年龄：{age}岁，{children}，健康状况：{health_status}。",
+      "{age}岁结婚，{children}，健康状况良好。"
+    ],
+    "age_range": [20, 35],
+    "children": ["育有1子", "育有2女", "育有1子1女", "未育"],
+    "health_status": ["健康", "体健", "无异常", "良好"]
+  },
+  "月经史": {
+    "templates": [
+      "月经{regularity}，{menopause_age}岁已绝经。",
+      "平素月经{regularity}，{menopause_age}岁绝经。",
+      "月经情况：{regularity}，绝经年龄{menopause_age}岁。",
+      "月经史显示{regularity}，绝经于{menopause_age}岁。",
+      "患者月经{regularity}，绝经时间为{menopause_age}岁。"
+    ],
+    "regularity": ["规律", "不规律", "周期正常", "偶有提前", "偶有延后"],
+    "menopause_age_range": [45, 55]
+  },
+  "家族史": {
+    "templates": [
+      "家族成员中，{relatives}曾患{disease}，其余家人{health_status}。",
+      "家族史显示：{relatives}罹患{disease}，其他成员{health_status}。",
+      "父母及兄弟姐妹情况：{relatives}{disease}，其余{health_status}。",
+      "家族中有{relatives}患有{disease}，其余家属{health_status}。",
+      "家族成员健康状况：{relatives}曾患{disease}，其他人{health_status}。",
+      "家族史无特殊，仅{relatives}患{disease}。"
+    ],
+    "relatives": ["母亲及大哥", "父亲", "母亲", "兄弟姐妹", "父母"],
+    "disease": ["胃癌", "肺癌", "肝癌", "乳腺癌", "无重大疾病"],
+    "health_status": ["健康", "无异常", "良好", "体健"]
+  },
+  "病史": {
+    "templates": [
+      "{onset_time}发现{side}{symptom}。",
+      "病史：{onset_time}出现{side}{symptom}。",
+      "患者于{onset_time}自觉{side}{symptom}。",
+      "{onset_time}，患者触及{side}{symptom}。",
+      "{onset_time}，自诉{side}{symptom}。"
+    ],
+    "onset_time": ["2020-10", "2020年10月", "2020年秋季", "2020年10月初", "2021年春季", "2022年5月"],
+    "side": ["左乳", "右乳", "双乳", "左侧乳房", "右侧乳房"],
+    "symptom": ["肿物", "肿块", "不适", "硬结", "结节", "疼痛"]
+  },
+  "辅助检查": {
+    "templates": [
+      "乳腺B超：{side}{quadrant}腺体{echo}回声{finding}，BI-RADS {birads}类（{size1}×{size2}cm）。{side2}腋下{lymph_status}（{lymph_size1}×{lymph_size2}cm）。",
+      "钼靶：{side}{region}{finding}，BI-RADS {birads2}（长径约{moly_size}mm）。{side2}腋下见{lymph_status2}(短径{lymph_short}mm)。",
+      "胸部CT：{side}{region}{finding}，{side2}腋下淋巴结{ct_status}。"
+    ],
+    "side": ["左乳", "右乳"],
+    "side2": ["左侧", "右侧"],
+    "quadrant": ["外上象限", "外下象限", "内上象限", "内下象限", "腋尾区"],
+    "echo": ["低", "高", "等"],
+    "finding": ["结节", "肿块", "占位", "异常回声区"],
+    "birads": ["3", "4a", "4b", "4c", "5"],
+    "birads2": ["3", "4a", "4b", "4c", "5"],
+    "size1_range": [0.5, 6.0],
+    "size2_range": [0.5, 6.0],
+    "region": ["腋尾区", "外上象限", "外下象限", "内上象限", "内下象限"],
+    "moly_size_range": [10, 60],
+    "lymph_status": ["肿大", "增大", "未见异常"],
+    "lymph_status2": ["肿大淋巴结影", "增大淋巴结", "未见异常"],
+    "lymph_size1_range": [0.5, 3.0],
+    "lymph_size2_range": [0.5, 3.0],
+    "lymph_short_range": [5, 30],
+    "ct_status": ["肿大", "增大", "未见异常"]
+  },
+  "确诊": {
+    "templates": [
+      "确诊时间：{date}。{biopsy}。免疫组化：{ihc}。术后分期：{stage}。",
+      "{date}确诊，{biopsy}，免疫组化：{ihc}，分期为{stage}。"
+    ],
+    "date": ["2020-10-10", "2021-03-15", "2022-07-01", "2023-01-20"],
+    "biopsy": [
+      "{side}及腋窝淋巴结穿刺活检：{cancer_type}，腋窝淋巴结{lymph_result}"
+    ],
+    "side": ["左乳", "右乳"],
+    "cancer_type": ["浸润性导管癌", "浸润性小叶癌", "混合型癌"],
+    "lymph_result": ["穿刺阳性", "穿刺阴性"],
+    "ihc": [
+      "ER（{er}）、PR（{pr}）、HER2（{her2}），Ki-67（{ki67}%）"
+    ],
+    "er": ["+", "-"],
+    "pr": ["+", "-"],
+    "her2": ["0", "1+", "2+", "3+"],
+    "ki67_range": [5, 95],
+    "stage": ["cT2N1M0 ⅡB期", "cT1N0M0 Ⅰ期", "cT3N2M0 ⅢA期"]
+  },
+  "治疗": {
+    "templates": [
+      "治疗方式：{treatment}。手术时间：{date}。手术方式：{method}。",
+      "{date}行{method}，治疗方案为{treatment}。",
+      "手术于{date}进行，方式为{method}，治疗：{treatment}。"
+    ],
+    "treatment": ["手术", "手术+化疗", "手术+放疗", "新辅助化疗+手术", "新辅助化疗+手术+放疗"],
+    "date": ["2020-10-20", "2021-04-15", "2022-08-01", "2023-02-10"],
+    "method": ["改良根治术", "全乳切除术", "保乳手术", "腋窝淋巴结清扫"]
+  },
+  "术后病理": {
+    "templates": [
+      "术后病理：{desc1}；{desc2}。",
+      "病理结果：{desc1}，{desc2}。",
+      "术后病理检查：{desc1}，{desc2}。"
+    ],
+    "desc1": ["{side}浸润性导管癌伴{diff}，{grade}级。单灶{tumor1}*{tumor2}cm，{invasion}；（乳头及基底切缘）{margin}"],
+    "side": ["左乳", "右乳"],
+    "diff": ["局灶神经内分泌分化", "部分腺样分化", "伴微小乳头状分化", "伴黏液分化"],
+    "grade": ["Ⅰ", "Ⅱ", "Ⅲ"],
+    "tumor1_range": [0.5, 6.0],
+    "tumor2_range": [0.5, 6.0],
+    "invasion": ["累犯神经及脉管", "未见神经及脉管侵犯", "累及脉管，未见神经侵犯"],
+    "margin": ["阴性", "阳性"],
+    "desc2": ["腋淋巴结转移: {lymph_num} / {lymph_total}"],
+    "lymph_num_range": [0, 10],
+    "lymph_total_range": [10, 30]
+  },
+  "免疫组化": {
+    "templates": [
+      "免疫组化：ER（{er}）、PR（{pr}）、HER2（{her2}），Ki-67（{ki67}%）。",
+      "免疫组化结果：ER（{er}）、PR（{pr}）、HER2（{her2}），Ki-67（{ki67}%）。"
+    ],
+    "er": ["+", "-"],
+    "pr": ["+", "-"],
+    "her2": ["0", "1+", "2+", "3+"],
+    "ki67_range": [5, 95]
+  },
+  "术后分期": {
+    "templates": [
+      "术后分期：{stage}。",
+      "分期：{stage}。"
+    ],
+    "stage": ["pT2N1M0 ⅡB期", "pT1N0M0 Ⅰ期", "pT3N2M0 ⅢA期"]
+  },
+  "基因检测": {
+    "templates": [
+      "BRCA1/2遗传易感基因（NGS）：{result}。",
+      "基因检测结果：{result}。"
+    ],
+    "result": ["未发现与疾病表型相关的致病突变", "检测到BRCA1基因突变", "检测到BRCA2基因突变", "未检测到相关致病突变"]
+  }
+} 
