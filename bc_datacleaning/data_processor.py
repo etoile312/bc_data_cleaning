@@ -197,8 +197,13 @@ class DataProcessor:
             }
             
             # 保存更新后的文件
+            # 只保留 original_text 和 cleaned_text 字段
+            output_data = {
+                "original_text": data.get("original_text", ""),
+                "cleaned_text": step3_cleaned_text
+            }
             with open(file_path, 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
+                json.dump(output_data, f, ensure_ascii=False, indent=2)
             
             self.logger.info(f"文件 {file_path.name} 处理完成")
             return True
