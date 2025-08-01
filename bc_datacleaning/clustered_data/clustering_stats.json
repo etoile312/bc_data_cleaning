@@ -1,0 +1,20 @@
+{
+  "endocrine_records": 187,
+  "surgery_records": 191,
+  "chemotherapy_records": 49,
+  "immunotherapy": 128,
+  "radiotherapy_records": 27,
+  "targeted_therapy": 47,
+  "adjuvant_therapy": 5,
+  "pathology_reports_biopsy_pathology": 36,
+  "pathology_reports_postoperative_pathology": 18,
+  "pathology_reports_molecular_pathology": 235,
+  "pathology_reports_genetic_testing": 27,
+  "diagnosis_assessment_initial_diagnosis": 20,
+  "diagnosis_assessment_neoadjuvant_treatment": 18,
+  "diagnosis_assessment_recurrence_diagnosis": 20,
+  "diagnosis_assessment_salvage_treatment": 1,
+  "diagnosis_assessment_follow_up": 173,
+  "total_files": 1735,
+  "total_categories": 15
+} 

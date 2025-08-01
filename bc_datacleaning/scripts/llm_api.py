@@ -126,7 +126,10 @@ class LLMAPI:
             return ""
             
         try:
-            url_local_model = "http://192.168.19.211:8000/v1/model/single_report"
+            #url_local_model = "http://192.168.19.211:8000/v1/model/single_report"
+            url_local_model = "http://123.57.234.67:8000/v1/model/single_report"
+
+            
             response = requests.post(url_local_model, json={"report": prompt})
             
             if response.status_code == 200:
