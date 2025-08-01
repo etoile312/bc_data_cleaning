@@ -22,7 +22,7 @@ from scripts.step4_terminology_standardization import TerminologyStandardization
 DATA_FOLDER = "data"  # 例如："data"、"../other_data"、"/absolute/path/to/data"
 
 # 设置要处理的单个文件ID（设置为None表示不处理单个文件）
-SINGLE_FILE_ID = 12  # 处理第12个文件
+SINGLE_FILE_ID = 17  # 处理第17个文件
 
 # 设置要处理的文件范围（设置为None表示不处理文件范围）
 # 格式：(起始ID, 结束ID) - 包含起始和结束ID
